@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <title>Digital Market</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="libs/slick-carousel/slick/slick.css"/>
+    <script src="libs/jquery.min.js" defer></script>
+    <script src="libs/slick-carousel/slick/slick.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body class="body">
+<h1 class="page-title" hidden>DM</h1>
+<header class="page-panel page-panel_header">
+    <div class="header-header container">
+        <ul class="service-buttons">
+            <li class="service-buttons__list">
+                <a class="service-buttons__link">
+                    <svg class="service-buttons__icon" role="presentation">
+                        <use xlink:href="img/login.svg#login" class="service-buttons__use-element"></use>
+                    </svg>
+                    Вход
+                </a>
+            </li>
+            <li class="service-buttons__list">
+                <a class="service-buttons__link">
+                    <svg class="service-buttons__icon" role="presentation">
+                        <use xlink:href="img/heart.svg#heart" class="service-buttons__use-element"></use>
+                    </svg>
+                    Избранное
+                </a>
+            </li>
+            <li class="service-buttons__list">
+                <a class="service-buttons__link">
+                    <svg class="service-buttons__icon" role="presentation">
+                        <use xlink:href="img/compare.svg#compare" class="service-buttons__use-element"></use>
+                    </svg>
+                    Сравнение
+                </a>
+            </li>
+        </ul>
+        <ul class="social-links">
+            <!--картинки соц.сетей будут фоновыми-->
+            <li class="social-links__list">
+                <a href="#" class="social-links__link" title="vk">
+                    <svg class="social-links__icon" role="presentation">
+                        <use xlink:href="img/vk.svg#vk" class="social-links__use-element"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-links__list">
+                <a href="#" class="social-links__link" title="facebook">
+                    <svg class="social-links__icon" role="presentation">
+                        <use xlink:href="img/facebook.svg#facebook" class="social-links__use-element"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-links__list">
+                <a href="#" class="social-links__link" title="twitter">
+                    <svg class="social-links__icon" role="presentation">
+                        <use xlink:href="img/twitter.svg#twitter" class="social-links__use-element"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="header-content container">
+        <a href="/" class="page-panel__logo-link">
+            <svg class="page-panel__logo" role="presentation">
+                <use xlink:href="img/logo1.svg#logo" class="page-panel__use-element"></use>
+            </svg>
+        </a>
+        <div class="header-center">
+            <ul class="contacts-block">
+                <li class="contacts-block__list">
+                    <a href="tel:+88006845594" class="contacts-block__link">
+                        <img src="img/phone.svg" alt="" class="contacts-block__icon">
+                        8 (800) 684-55-94
+                    </a>
+                </li>
+                <li class="contacts-block__list">
+                    <a href="mailto:info@nalabuten.ah" class="contacts-block__link">
+                        <img src="img/envelope.svg" alt="" class="contacts-block__icon">
+                        info@dm.ah
+                    </a>
+                </li>
+            </ul>
+            <form action="base.php" class="search-block">
+                <input type="search" class="search-block__input-line" placeholder="Введите поисковую фразу">
+                <button type="submit" class="search-block__search-button" title="Найти"></button>
+            </form>
+        </div>
+        <div class="total-block">
+            <output class="total-block__total-price">5000р.</output>
+            <a href="#" class="total-block__buy-bottom" title="Перейти в корзину" data-count="4">
+                <svg class="total-block__cart" role="presentation">
+                    <use xlink:href="img/cart.svg#cart" class="total-block__use-element"></use>
+                </svg>
+            </a>
+        </div>
+        <ul class="mobile-panel">
+            <li class="mobile-panel__list">
+                <a href="#" class="mobile-panel__bottom mobile-panel__bottom_link" title="Перейти в корзину">
+                    <svg class="mobile-panel__icon mobile-panel__icon_cart" role="presentation">
+                        <use xlink:href="img/cart.svg#cart" class="mobile-panel__use-element"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-panel__list">
+                <button class="mobile-panel__bottom mobile-panel__bottom_bottom" title="Найти">
+                    <svg class="mobile-panel__icon mobile-panel__icon_search" role="presentation">
+                        <use xlink:href="img/search.svg#search" class="mobile-panel__use-element"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="mobile-panel__list">
+                <button class="mobile-panel__bottom mobile-panel__bottom_bottom" title="Меню">
+                    <svg class="mobile-panel__icon mobile-panel__icon_hamburger" role="presentation">
+                        <use xlink:href="img/hamburger.svg#hamburger"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</header>
+<nav class="page-nav container">
+    <ul class="page-nav__page-menu">
+        <li class="page-nav__menu-list">
+            <a href="#" class="page-nav__menu-item">Главная</a>
+        </li>
+        <li class="page-nav__menu-list">
+            <a href="#" class="page-nav__menu-item">Каталог</a>
+        </li>
+        <li class="page-nav__menu-list">
+            <a href="#" class="page-nav__menu-item">Галерея</a>
+        </li>
+        <li class="page-nav__menu-list">
+            <a href="#" class="page-nav__menu-item">Акция</a>
+        </li>
+        <li class="page-nav__menu-list">
+            <a href="#" class="page-nav__menu-item">Контакты</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="main-zone container">
+    <main class="main">
+        <div class="page-banner">
+            <div class="page-banner__item">
+                <div class="page-banner__item_wrapper page-banner__item_main">
+                    <img src="images/banner-img-1.jpg" alt="Баннер" class="page-banner__item-background page-banner__item-background_item_main">
+                    <div class="page-banner__content-wrapper">
+                        <p class="page-banner__item-title">Розыграш 100 летия</p>
+                        <p class="page-banner__secondary-title">к юбилею компании nikon</p>
+                        <p class="page-banner__item-info">Не пропустите уникальный шанс выиграть лучший<br>фотоаппарат века NIKON D5</p>
+                        <a href="#" class="page-banner__buy-now-button">узнать больше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="page-banner__item">
+                <img src="images/banner-img-2.jpg" alt="Баннер" class="page-banner__item-background">
+            </div>
+            <div class="page-banner__item">
+                <img src="images/banner-img-3.jpg" alt="Баннер" class="page-banner__item-background">
+            </div>
+        </div>
+
+
+
+
+        <div class="proposes-block">
+            <div class="proposes-block__item proposes-block__item_sales">
+                <p class="propose-title">
+                    <svg class="proposes-block__title-icon" role="presentation">
+                        <use xlink:href="img/credit-card.svg#credit-card"></use>
+                    </svg>
+                    Продажа
+                </p>
+                <p class="propose-info">Шорокий асортимент моделей</p>
+            </div>
+            <div class="proposes-block__item proposes-block__item_discounts">
+                <p class="propose-title">
+                    <svg class="proposes-block__title-icon" role="presentation">
+                        <use xlink:href="img/like.svg#like"></use>
+                    </svg>
+                    Скидки
+                </p>
+                <p class="propose-info">Невообразимо низкие цены</p>
+            </div>
+            <div class="proposes-block__item proposes-block__item_rates">
+                <p class="propose-title">
+                    <svg class="proposes-block__title-icon" role="presentation">
+                        <use xlink:href="img/gift.svg#gift"></use>
+                    </svg>
+                    Акции
+                </p>
+                <p class="propose-info">Широкий асортимент моделей</p>
+            </div>
+        </div>
+        <div class="goods">
+            <section class="goods-block">
+                <h2 class="goods-block__block-title">Сейчас в тренде</h2>
+                <figure data-lable="топ" class="goods-block__item-block goods-block__item-block_new-label" data-label="new">
+                    <!--Лейблы зададим псевдоклассами, а их содержание атрибутами data-label-->
+                    <img src="images/80D.jpg" alt="Фотоаппарат" class="goods-block__item-image">
+                    <figcaption class="goods-block__item-name">Canon EOS 80D</figcaption>
+                    <p class="goods-block__item-price">60000р.</p>
+                    <div class="goods-block__buttons-block">
+                        <button class="goods-block__buy-button">
+                            <svg class="proposes-block__button-icon proposes-block__button-icon_buy-icon" role="presentation">
+                                <use xlink:href="img/cart.svg#cart"></use>
+                            </svg>
+                            в корзину
+                        </button>
+                        <button class="goods-block__favorite-button" title="Добавить в избранное">
+                            <svg class="proposes-block__button-icon" role="presentation">
+                                <use xlink:href="img/flesh.svg#flesh"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </figure>
+                <figure data-lable="топ" class="goods-block__item-block goods-block__item-block_new-label" data-label="new">
+                    <!--Лейблы зададим псевдоклассами, а их содержание атрибутами data-label-->
+                    <img src="images/6D.jpg" alt="Фотоаппарат" class="goods-block__item-image">
+                    <figcaption class="goods-block__item-name">Canon EOS 6D Mark II</figcaption>
+                    <p class="goods-block__item-price">90000р.</p>
+                    <div class="goods-block__buttons-block">
+                        <button class="goods-block__buy-button">
+                            <svg class="proposes-block__button-icon proposes-block__button-icon_buy-icon" role="presentation">
+                                <use xlink:href="img/cart.svg#cart"></use>
+                            </svg>
+                            в корзину
+                        </button>
+                        <button class="goods-block__favorite-button" title="Добавить в избранное">
+                            <svg class="proposes-block__button-icon" role="presentation">
+                                <use xlink:href="img/flesh.svg#flesh"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </figure>
+                <figure data-lable="топ" class="goods-block__item-block goods-block__item-block_new-label" data-label="new">
+                    <!--Лейблы зададим псевдоклассами, а их содержание атрибутами data-label-->
+                    <img src="images/5D.jpg" alt="Фотоаппарат" class="goods-block__item-image">
+                    <figcaption class="goods-block__item-name">Canon EOS 5D Mark IV</figcaption>
+                    <p class="goods-block__item-price">170000р.</p>
+                    <div class="goods-block__buttons-block">
+                        <button class="goods-block__buy-button">
+                            <svg class="proposes-block__button-icon proposes-block__button-icon_buy-icon" role="presentation">
+                                <use xlink:href="img/cart.svg#cart"></use>
+                            </svg>
+                            в корзину
+                        </button>
+                        <button class="goods-block__favorite-button" title="Добавить в избранное">
+                            <svg class="proposes-block__button-icon" role="presentation">
+                                <use xlink:href="img/flesh.svg#flesh"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </figure>
+                <figure data-lable="топ" class="goods-block__item-block goods-block__item-block_new-label" data-label="new">
+                    <!--Лейблы зададим псевдоклассами, а их содержание атрибутами data-label-->
+                    <img src="images/1D.jpg" alt="Фотоаппарат" class="goods-block__item-image">
+                    <figcaption class="goods-block__item-name">Canon EOS 1Dx Mark II</figcaption>
+                    <p class="goods-block__item-price">420000р.</p>
+                    <div class="goods-block__buttons-block">
+                        <button class="goods-block__buy-button">
+                            <svg class="proposes-block__button-icon proposes-block__button-icon_buy-icon" role="presentation">
+                                <use xlink:href="img/cart.svg#cart"></use>
+                            </svg>
+                            в корзину
+                        </button>
+                        <button class="goods-block__favorite-button" title="Добавить в избранное">
+                            <svg class="proposes-block__button-icon" role="presentation">
+                                <use xlink:href="img/flesh.svg#flesh"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </figure>
+            </section>
+            <section class="goods-block">
+                <h2 class="goods-block__block-title">Выбор профессионалов</h2>
+                <figure data-lable="best" class="goods-block__item-block goods-block__item-block_lenses-block goods-block__item-block_best-label" data-label="new">
+                    <!--Лейблы зададим псевдоклассами, а их содержание атрибутами data-label-->
+                    <img src="images/50mm.jpg" alt="объектив" class="goods-block__item-image">
+                    <figcaption class="goods-block__item-name">Canon EF 50/1.2</figcaption>
+                    <p class="goods-block__item-price">85000р.</p>
+                    <div class="goods-block__buttons-block">
+                        <button class="goods-block__buy-button">
+                            <svg class="proposes-block__button-icon proposes-block__button-icon_buy-icon" role="presentation">
+                                <use xlink:href="img/cart.svg#cart"></use>
+                            </svg>
+                            в корзину
+                        </button>
+                        <button class="goods-block__favorite-button" title="Добавить в избранное">
+                            <svg class="proposes-block__button-icon" role="presentation">
+                                <use xlink:href="img/flesh.svg#flesh"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </figure>
+                <figure data-lable="best" class="goods-block__item-block goods-block__item-block_lenses-block goods-block__item-block_best-label" data-label="new">
+                    <!--Лейблы зададим псевдоклассами, а их содержание атрибутами data-label-->
+                    <img src="images/85mm.jpg" alt="объектив" class="goods-block__item-image">
+                    <figcaption class="goods-block__item-name">Canon EF 85/1.2</figcaption>
+                    <p class="goods-block__item-price">120000р.</p>
+                    <div class="goods-block__buttons-block">
+                        <button class="goods-block__buy-button">
+                            <svg class="proposes-block__button-icon proposes-block__button-icon_buy-icon" role="presentation">
+                                <use xlink:href="img/cart.svg#cart"></use>
+                            </svg>
+                            в корзину
+                        </button>
+                        <button class="goods-block__favorite-button" title="Добавить в избранное">
+                            <svg class="proposes-block__button-icon" role="presentation">
+                                <use xlink:href="img/flesh.svg#flesh"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </figure>
+                <figure data-lable="best" class="goods-block__item-block goods-block__item-block_lenses-block goods-block__item-block_best-label" data-label="new">
+                    <!--Лейблы зададим псевдоклассами, а их содержание атрибутами data-label-->
+                    <img src="images/16-35.jpg" alt="объектив" class="goods-block__item-image">
+                    <figcaption class="goods-block__item-name">Canon EF 16-35</figcaption>
+                    <p class="goods-block__item-price">135000р.</p>
+                    <div class="goods-block__buttons-block">
+                        <button class="goods-block__buy-button">
+                            <svg class="proposes-block__button-icon proposes-block__button-icon_buy-icon" role="presentation">
+                                <use xlink:href="img/cart.svg#cart"></use>
+                            </svg>
+                            в корзину
+                        </button>
+                        <button class="goods-block__favorite-button" title="Добавить в избранное">
+                            <svg class="proposes-block__button-icon" role="presentation">
+                                <use xlink:href="img/flesh.svg#flesh"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </figure>
+                <figure data-lable="best" class="goods-block__item-block goods-block__item-block_lenses-block goods-block__item-block_best-label" data-label="new">
+                    <!--Лейблы зададим псевдоклассами, а их содержание атрибутами data-label-->
+                    <img src="images/24-70.jpg" alt="объектив" class="goods-block__item-image">
+                    <figcaption class="goods-block__item-name">Canon EF 24-70</figcaption>
+                    <p class="goods-block__item-price">120000р.</p>
+                    <div class="goods-block__buttons-block">
+                        <button class="goods-block__buy-button">
+                            <svg class="proposes-block__button-icon proposes-block__button-icon_buy-icon" role="presentation">
+                                <use xlink:href="img/cart.svg#cart"></use>
+                            </svg>
+                            в корзину
+                        </button>
+                        <button class="goods-block__favorite-button" title="Добавить в избранное">
+                            <svg class="proposes-block__button-icon" role="presentation">
+                                <use xlink:href="img/flesh.svg#flesh"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </figure>
+            </section>
+        </div>
+    </main>
+
+    <div class="aside-zone">
+        <aside class="page-aside">
+            <h2 class="page-aside__aside-title">Категории</h2>
+            <ul class="page-aside__aside-menu">
+                <li class="page-aside__aside__list">
+                    <a href="#" class="page-aside__aside-item">
+                        <svg class="page-aside__item-icon" role="presentation">
+                            <use xlink:href="img/photocamera.svg#photocamera"></use>
+                        </svg>
+                        Фотоаппараты
+                    </a>
+                </li>
+                <li class="page-aside__aside__list">
+                    <a href="#" class="page-aside__aside-item">
+                        <svg class="page-aside__item-icon" role="presentation">
+                            <use xlink:href="img/lens.svg#lens"></use>
+                        </svg>
+                        Объективы
+                    </a>
+                </li>
+                <li class="page-aside__aside__list">
+                    <a href="#" class="page-aside__aside-item">
+                        <svg class="page-aside__item-icon" role="presentation">
+                            <use xlink:href="img/flash.svg#flash"></use>
+                        </svg>
+                        Вспышки
+                    </a>
+                </li>
+                <li class="page-aside__aside__list">
+                    <a href="#" class="page-aside__aside-item">
+                        <svg class="page-aside__item-icon" role="presentation">
+                            <use xlink:href="img/holder.svg#holder"></use>
+                        </svg>
+                        Штативы
+                    </a>
+                </li>
+                <li class="page-aside__aside__list">
+                    <a href="#" class="page-aside__aside-item">
+                        <svg class="page-aside__item-icon" role="presentation">
+                            <use xlink:href="img/memory.svg#memory"></use>
+                        </svg>
+                        Память
+                    </a>
+                </li>
+                <li class="page-aside__aside__list">
+                    <a href="#" class="page-aside__aside-item">
+                        <svg class="page-aside__item-icon" role="presentation">
+                            <use xlink:href="img/filters.svg#filters"></use>
+                        </svg>
+                        Фильтры
+                    </a>
+                </li>
+                <li class="page-aside__aside__list">
+                    <a href="#" class="page-aside__aside-item">
+                        <svg class="page-aside__item-icon" role="presentation">
+                            <use xlink:href="img/beg.svg#beg"></use>
+                        </svg>
+                        Сумки
+                    </a>
+                </li>
+                <li class="page-aside__aside__list">
+                    <a href="#" class="page-aside__aside-item">
+                        <svg class="page-aside__item-icon" role="presentation">
+                            <use xlink:href="img/accessories.svg#accessories"></use>
+                        </svg>
+                        Аксессуары
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <a href="#" class="page-advertising">
+            <img src="images/adv1.jpg" alt="Реклама" class="advertising-pic">
+        </a>
+        <a href="#" class="page-advertising page-advertising_second">
+            <img src="images/adv2.jpg" alt="Реклама" class="advertising-pic">
+        </a></div>
+</div>
+<footer class="page-panel page-panel_footer container">
+    <a href="/" class="page-panel__logo-link page-panel__logo-link_footer-logo">
+        <svg class="page-panel__logo" role="presentation">
+            <use xlink:href="img/logo1.svg#logo" class="page-panel__use-element"></use>
+        </svg>
+    </a>
+    <div class="page-panel__menu-container page-panel__menu-container_one">
+        <div class="page-panel__menu-title">Меню</div>
+        <ul class="page-panel__menu">
+            <li class="page-panel__menu-list">
+                <a href="#" class="page-panel__menu-item">Главная</a>
+            </li>
+            <li class="page-panel__menu-list">
+                <a href="#" class="page-panel__menu-item">Каталог</a>
+            </li>
+            <li class="page-panel__menu-list">
+                <a href="#" class="page-panel__menu-item">Галерея</a>
+            </li>
+            <li class="page-panel__menu-list">
+                <a href="#" class="page-panel__menu-item">Акции</a>
+            </li>
+            <li class="page-panel__menu-list">
+                <a href="#" class="page-panel__menu-item">Контакты</a>
+            </li>
+        </ul>
+    </div>
+    <div class="page-panel__menu-container page-panel__menu-container_two">
+        <div class="page-panel__menu-title">Способы оплаты</div>
+        <ul class="page-panel__menu">
+            <li class="page-panel__menu-list">
+                <a href="#" class="page-panel__menu-item">Наличными</a>
+            </li>
+            <li class="page-panel__menu-list">
+                <a href="#" class="page-panel__menu-item">Visa или MasterCard</a>
+            </li>
+            <li class="page-panel__menu-list">
+                <a href="#" class="page-panel__menu-item">В кредит</a>
+            </li>
+        </ul>
+    </div>
+    <div class="page-panel__menu-container">
+        <div class="page-panel__menu-title">Контактная информация</div>
+        <ul class="page-panel__menu">
+            <li class="page-panel__menu-list">
+                <a href="tel:+84996549879" class="page-panel__menu-item">Телефон: 8(499)654-98-79</a>
+            </li>
+            <li class="page-panel__menu-list">
+                <a href="mailto:info@nalabuten.ah" class="page-panel__menu-item">info@DM.ah</a>
+            </li>
+            <li class="page-panel__menu-list">
+                <a href="#" class="page-panel__menu-item">
+                    <address>Адрес: г.Москва Фантаститечкий проезд д.234</address>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <small class="page-panel__small">&copy; DM 2019</small>
+</footer>
+</body>
+</html>

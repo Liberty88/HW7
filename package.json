@@ -1,0 +1,8 @@
+{
+  "name": "HW5.log",
+  "description": "HW7",
+  "devDependencies": {},
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
+}
