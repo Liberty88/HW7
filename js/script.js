@@ -1,11 +1,14 @@
-let slide = $('.page-banner').slick({
-    nextArrow: '<button type="button" class="slick-next"> <img src="../img/next.svg" class="page-banner__arrow-icon page-banner__arrow_next" alt="next" title="next"> </button>',
-    prevArrow: '<button type="button" class="slick-prev"> <img src="../img/prev.svg" class="page-banner__arrow-icon page-banner__arrow_prev" alt="prev" title="prev"> </button>',
-});
+let slide;
+function slideCreator(){
+    slide = $('.page-banner').slick({
+        nextArrow: '<button type="button" class="slick-next"> <img src="../img/next.svg" class="page-banner__arrow-icon page-banner__arrow_next" alt="next" title="next"> </button>',
+        prevArrow: '<button type="button" class="slick-prev"> <img src="../img/prev.svg" class="page-banner__arrow-icon page-banner__arrow_prev" alt="prev" title="prev"> </button>',
+    });
+}
 
 let hamburger = $('.mobile-panel__icon_hamburger');
 let menu = $('.page-nav');
-let banner = $('.page-banner');
+
 
 hamburger.on('click', function () {
     menu.toggleClass('open');
@@ -14,16 +17,16 @@ hamburger.on('click', function () {
 
 
 
-let media = window.matchMedia("(max-width: 600px)");
-window.addEventListener('resize', widthChange);
+let media = window.matchMedia('(max-width: 600px)');
 widthChange(media);
+media.addListener(widthChange);
+
 
 function widthChange(media) {
     if (media.matches) {
-        banner.removeClass('slick-slider').addClass('hidden');
-
+        slide.slick('unslick');
     } else {
-        banner.addClass('slick-slider').removeClass('hidden');
+        slideCreator();
         menu.removeClass('open');
     }
 }
